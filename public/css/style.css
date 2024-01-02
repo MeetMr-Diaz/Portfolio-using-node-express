@@ -1,0 +1,294 @@
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 20px;;
+    background-color: rgb(11, 15, 3);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .tabs a{
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .tabs a:hover {
+    background-color: #f5efef;
+    color: #333333;
+    box-shadow: 0 0 10px white;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .tabs a.active {
+    margin: 20px;
+    background-color: antiquewhite;
+    border: solid 1px #333333;
+    box-sizing: border-box; 
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 60px;
+    flex:1;
+  }
+  
+  /*for the home page*/
+  .Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    padding: auto;
+    
+  }
+  #Home p {
+    font-size: 25px;
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
+  } 
+  
+  #Home img {
+    width: 200px;
+    height: 250px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 55px;
+    margin-left: 22px;
+  }
+  
+.social-icon {
+  color: white;
+   font-size: 30px;
+   transition: color 0.2s;
+}
+  
+.social-icon:hover {
+  background-color: #f5efef;
+  color: #333333;
+  box-shadow: 0 0 10px white;
+}
+  /*for the CV page*/
+/* Add these styles for the CV page */
+#CV {
+  margin: 20px; /* Adjust margin as needed */
+  background-color: antiquewhite; /* Match the background color */
+  border: solid 1px #333333; /* Add border for consistency */
+  box-sizing: border-box;
+  padding: 20px 11px;
+  text-align: center;
+}
+
+#CV h1 {
+  font-size: 36px; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+#CV p {
+  font-size: 25px; /* Adjust font size as needed */
+  line-height: 1; /* Adjust line height as needed */
+  padding: 0 100px; /* Adjust padding as needed */
+}
+#CV h1{
+  text-align: left;
+}
+ /* Retain the existing styles for the CV page */
+#CV button {
+  font-size: 16px; /* Adjust font size as needed */
+  margin-top: 15px; /* Adjust margin as needed */
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #d9d7d7; /* Add the background color property */
+}
+
+#CV button:hover {
+  background-color: #f5efef;
+  color: #070707;
+  box-shadow: 0 0 10px rgb(36, 5, 216);
+}
+
+
+/* You can keep the existing styles for other sections like skills, education, etc. */
+
+/* Remove the existing styles for the education page (there's a typo in 'text-align') */
+#Education {
+  text-align: center; /* Correct typo */
+}
+
+#Education #educationHistory {
+  font-size: 25px;
+  text-align: center;
+  margin: 5px;
+  padding: 0px;
+}
+
+#Education #educationDetails {
+  text-align: center;
+  font-size: 25px;
+  list-style: none;
+}
+
+
+/*for the projects page*/
+ #mainBox {
+  display: flex;
+  flex-direction: rows;
+  padding: 20px;
+}
+
+#box{
+  flex-grow: 1;
+  position: relative;
+  width: 350px;
+  height: 880px;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background:linear-gradient(to top, rgb(255,45,45) 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all .8s;
+  background-clip: text;
+  -webkit-background-clip: text; 
+}
+#box .content {
+  flex: 1;
+  text-align: center;
+}
+
+#box img{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+#box:hover {
+  box-shadow: 0 0 20px rgb(13, 21, 243);
+  background:linear-gradient(to top, rgb(12, 12, 12) 50%, white 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.image-wrapper{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38vh;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+input, textarea {
+  width: 450px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px; 
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#Contact {
+  text-align: center;
+  margin: 50px;
+}
+#Contact h1{
+
+text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 7px;
+  background-color: rgb(7, 10, 6);
+  color: white;
+  margin-top: auto;
+  height: 135px;
+}
+
+footer p {
+  margin: 1px 0;
+  font-size: 14px;
+}
+
+footer header {
+  font-size: 20px; 
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: #f5efef;
+  color: #333333;
+  box-shadow: 0 0 10px white;
+}
+
+footer .social-icon {
+  font-size: 25px;
+  margin: 0 10px;
+  color: white;
+  transition: color 0.2s;
+}
+
+footer .social-icon:hover {
+  background-color: #f5efef;
+  color: #333333;
+  box-shadow: 0 0 10px white;
+}
+
+footer p {
+  margin: 1px 0;
+  font-size: 14px;
+}
+
